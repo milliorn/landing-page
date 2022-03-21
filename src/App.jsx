@@ -1,6 +1,6 @@
 import "./App.css";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <nav className="w-full p-2 mt-0">
       <div className="container flex flex-wrap items-center mx-auto">
@@ -10,7 +10,8 @@ function NavBar() {
             href="/"
           >
             <span className="pl-4 text-2xl hover:animate-pulse">
-              <i className=""></i> Header Logo
+              <i className=""></i>
+              {props.logo}
             </span>
           </a>
         </div>
@@ -21,7 +22,7 @@ function NavBar() {
                 className="inline-block px-4 py-2 text-gray-200 no-underline hover:animate-pulse hover:text-gray-200"
                 href="/"
               >
-                link 1
+                {props.linkFirst}
               </a>
             </li>
             <li className="mr-3 sm:mb-2">
@@ -29,7 +30,7 @@ function NavBar() {
                 className="inline-block px-4 py-2 text-gray-200 no-underline hover:animate-pulse hover:text-gray-200 hover:text-underline"
                 href="/"
               >
-                link 2
+                {props.linkMiddle}
               </a>
             </li>
             <li className="mr-3 sm:mb-2">
@@ -37,7 +38,7 @@ function NavBar() {
                 className="inline-block px-4 py-2 text-gray-200 no-underline hover:animate-pulse hover:text-gray-200 hover:text-underline"
                 href="/"
               >
-                link 3
+                {props.linkLast}
               </a>
             </li>
           </ul>
@@ -58,7 +59,7 @@ function Hero(props) {
         <p className="my-4 leading-normal text-center text-gray-200 sm:mx-auto">
           {props.pText}
         </p>
-        <button className="px-8 py-4 mx-auto my-4 capitalize border border-gray-900 shadow hover:animate-pulse bg-sky-400 hover:bg-sky-900 text-sky-50 hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent">
+        <button className="px-8 py-4 mx-auto my-4 capitalize bg-blue-500 border border-gray-900 shadow hover:animate-pulse hover:bg-blue-900 text-blue-50 hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent">
           {props.bText}
         </button>
       </div>
@@ -88,7 +89,7 @@ function Information(props) {
           <img
             src={props.img[0]}
             alt="image1"
-            className="border-4 rounded-xl border-sky-900 "
+            className="border-4 border-blue-900 rounded-xl "
           />
           <p className="p-2">{props.paragraph[0]}</p>
         </div>
@@ -96,7 +97,7 @@ function Information(props) {
           <img
             src={props.img[1]}
             alt="image2"
-            className="border-4 rounded-xl border-sky-900"
+            className="border-4 border-blue-900 rounded-xl"
           />
           <p className="p-2">{props.paragraph[1]}</p>
         </div>
@@ -104,7 +105,7 @@ function Information(props) {
           <img
             src={props.img[2]}
             alt="image3"
-            className="border-4 rounded-xl border-sky-900"
+            className="border-4 border-blue-900 rounded-xl"
           />
           <p className="p-2">{props.paragraph[2]}</p>
         </div>
@@ -126,6 +127,20 @@ function Quote(props) {
   );
 }
 
+function Contact(props) {
+  return (
+    <div className="top-0 left-0 w-full h-full p-12 text-sm text-center sm:text-base text-gray-50 bg-gray-50">
+      <div className="relative p-4 mx-auto my-0 bg-blue-500 sm:w-11/12 h-3/6 top-1/4">
+        <h2 className="m-4 font-bold">{props.h2}</h2>
+        <p>{props.p}</p>
+        <button className="px-8 py-4 mx-auto my-4 capitalize bg-blue-500 border shadow border-gray-50 hover:animate-pulse hover:bg-blue-900 text-blue-50 hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent">
+          {props.button}
+        </button>
+      </div>
+    </div>
+  );
+}
+
 export default function App() {
   const img = [
     "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
@@ -138,7 +153,10 @@ export default function App() {
     "Lorem ipsum dolor sit amet consectetur adipisicing. Culpa, soluta molestiae nihil nam, at ea dolore debitis maxime aliquam adipisci, illum amet pariatur corrupti ipsam delectus repellat quod repudiandae minus?",
     "Lorem ipsum dolor sit amet consectetur. Tempora, nihil quo. Aliquam excepturi quaerat exercitationem reprehenderit, maxime saepe! Nostrum repudiandae, amet culpa iusto recusandae aliquid. Dolor iure saepe nobis fugit.",
     "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "Sign up for more lorem ipsum",
   ];
+
+  const links = ["link 1", "link 2", "link 3"];
 
   const headingText = "react tailwind";
   const buttonText = "sign up";
@@ -146,10 +164,18 @@ export default function App() {
   const quoteText =
     "Nihil et nobis aperiam natus quod quos quisquam quasi earum possimus amet obcaecati excepturi debitis, ratione reprehenderit! Rem, in!";
   const quoteAuthor = "anonymous";
+  const navbarLogo = "Header Logo";
+  const contactHeading = "Join us! Lorem ipsum";
+  const contactButton = "Sign Up";
 
   return (
     <div className="bg-gray-800">
-      <NavBar />
+      <NavBar
+        logo={navbarLogo}
+        linkFirst={links[0]}
+        linkMiddle={links[1]}
+        linkLast={links[2]}
+      />
       <Hero hText={headingText} pText={paragraphText[3]} bText={buttonText} />
       <Information
         img={img}
@@ -157,6 +183,11 @@ export default function App() {
         paragraph={paragraphText}
       />
       <Quote quote={quoteText} author={quoteAuthor} />
+      <Contact
+        h2={contactHeading}
+        p={paragraphText[4]}
+        button={contactButton}
+      />
     </div>
   );
 }
