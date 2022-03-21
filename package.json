@@ -1,6 +1,33 @@
 {
   "name": "landing-page",
   "version": "0.1.0",
+  "description": "Template landing page site using React with Tailwind",
+  "keywords": [
+    "css",
+    "html",
+    "javascript",
+    "js",
+    "landing page",
+    "react",
+    "tailwind"
+  ],
+  "homepage": "",
+  "bugs": {
+    "email": "scottmilliorn@gmail.com",
+    "url": "https://github.com/milliorn/React-Tailwind-Landing-Page/issues"
+  },
+  "license": "MIT",
+  "author": {
+    "email": "scottmilliorn@gmail.com",
+    "name": "Scott Milliorn",
+    "url": "https://github.com/milliorn"
+  },
+  "repository": {
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/milliorn/React-Tailwind-Landing-Page.git"
+    }
+  },
   "private": true,
   "dependencies": {
     "react": "^17.0.2",
