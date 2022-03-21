@@ -3,20 +3,20 @@ import "./App.css";
 function NavBar(props) {
   return (
     <nav className="w-full p-2 mt-0">
-      <div className="container flex flex-wrap items-center mx-auto">
+      <div className="flex flex-wrap items-center mx-auto ">
         <div className="flex justify-center w-full text-gray-50 sm:w-1/2 sm:justify-start">
           <a
             className="no-underline text-gray-50 hover:text-gray-50 hover:no-underline"
             href="/"
           >
-            <span className="pl-4 text-2xl hover:animate-pulse">
+            <span className="pl-4 text-2xl capitalize hover:animate-pulse">
               <i className=""></i>
               {props.logo}
             </span>
           </a>
         </div>
-        <div className="flex content-center justify-between w-full pt-4 sm:w-1/2 sm:justify-end">
-          <ul className="flex items-center justify-between flex-1 list-reset sm:flex-none">
+        <div className="flex content-center w-full pt-4 capitalize sm:w-1/2 sm:justify-end">
+          <ul className="flex items-center justify-center flex-1 list-reset sm:flex-none">
             <li className="mr-3 sm:mb-2">
               <a
                 className="inline-block px-4 py-2 text-gray-200 no-underline hover:animate-pulse hover:text-gray-200"
@@ -50,7 +50,7 @@ function NavBar(props) {
 
 function Hero(props) {
   return (
-    <div className="container flex flex-col items-center mx-auto mb-12 sm:flex-row sm:mb-24">
+    <div className="flex flex-col items-center mx-auto mb-12 sm:flex-row sm:mb-24">
       {/*<!--Left Col-->*/}
       <div className="flex flex-col items-start justify-center w-full px-6 pt-12 pb-24 lg:w-1/2 text-gray-50">
         <h1 className="mx-auto my-4 text-4xl font-bold capitalize md:text-5xl">
@@ -158,36 +158,35 @@ export default function App() {
 
   const links = ["link 1", "link 2", "link 3"];
 
-  const headingText = "react tailwind";
-  const buttonText = "sign up";
-  const informationHeading = "Information Heading";
-  const quoteText =
-    "Nihil et nobis aperiam natus quod quos quisquam quasi earum possimus amet obcaecati excepturi debitis, ratione reprehenderit! Rem, in!";
-  const quoteAuthor = "anonymous";
-  const navbarLogo = "Header Logo";
-  const contactHeading = "Join us! Lorem ipsum";
-  const contactButton = "Sign Up";
+  const heading = [
+    "react tailwind",
+    "Information Heading",
+    "Join us! Lorem ipsum",
+  ];
+
+  const text = [
+    "sign up",
+    "Nihil et nobis aperiam natus quod quos quisquam quasi earum possimus amet obcaecati excepturi debitis, ratione reprehenderit! Rem, in!",
+    "anonymous",
+    "header logo",
+  ];
 
   return (
-    <div className="bg-gray-800">
+    <div className="container bg-gray-800">
       <NavBar
-        logo={navbarLogo}
+        logo={text[3]}
         linkFirst={links[0]}
         linkMiddle={links[1]}
         linkLast={links[2]}
       />
-      <Hero hText={headingText} pText={paragraphText[3]} bText={buttonText} />
+      <Hero hText={heading[0]} pText={paragraphText[3]} bText={text[0]} />
       <Information
         img={img}
-        infoHeading={informationHeading}
+        infoHeading={heading[1]}
         paragraph={paragraphText}
       />
-      <Quote quote={quoteText} author={quoteAuthor} />
-      <Contact
-        h2={contactHeading}
-        p={paragraphText[4]}
-        button={contactButton}
-      />
+      <Quote quote={text[1]} author={text[2]} />
+      <Contact h2={heading[2]} p={paragraphText[4]} button={text[0]} />
     </div>
   );
 }
