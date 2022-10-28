@@ -8,7 +8,7 @@ import { heading, img, links, paragraphText, text } from "./data";
 
 export default function App(): JSX.Element {
   return (
-    <div className="m-0 mx-auto antialiased bg-gray-800 2xl:container">
+    <div className="m-0 mx-auto antialiased bg-gray-900 2xl:container">
       <NavBar
         linkFirst={links[0]}
         linkLast={links[2]}
