@@ -6,7 +6,7 @@ import { Copyright } from "./Copyright";
 export function Footer(props: { owner: string }): JSX.Element {
   const url = "https://github.com/milliorn" as string;
   return (
-    <footer>
+    <footer className="bg-gray-800">
       <a href={url} target="_blank" rel="noreferrer">
         <Copyright props={props} />
       </a>
