@@ -1,3 +1,6 @@
+/**
+ * @param {{ logo: string; linkFirst: string; linkMiddle: string; linkLast: string; }} props
+ */
 export function NavbarLogo({
   props,
 }: {

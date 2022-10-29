@@ -6,6 +6,7 @@ import { NavBar } from "./components/NavBar";
 import { Quote } from "./components/Quote";
 import { heading, img, links, paragraphText, text } from "./data";
 
+/* main app */
 export default function App(): JSX.Element {
   return (
     <div className="m-0 mx-auto antialiased bg-gray-900 2xl:container">

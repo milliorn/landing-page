@@ -12,7 +12,10 @@ export function Hero(props: { hText: string; pText: string; bText: string }) {
         <p className="my-4 leading-normal text-center text-gray-200 sm:mx-auto">
           {props.pText}
         </p>
-        <button className="px-8 py-4 mx-auto my-4 capitalize bg-gray-50 border border-gray-900 shadow hover:animate-pulse hover:bg-blue-900 text-black hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent">
+        <button
+          type="button"
+          className="px-8 py-4 mx-auto my-4 capitalize bg-gray-50 border border-gray-900 shadow hover:animate-pulse hover:bg-blue-900 text-black hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent"
+        >
           {props.bText}
         </button>
       </div>

@@ -1,6 +1,9 @@
 import uuid from "react-uuid";
-import { LazyLoadImage } from "react-lazy-load-image-component";
+import { InformationImage } from "./InformationImage";
 
+/**
+ * @param {{ infoHeading: string; img: (string | undefined)[]; paragraph: (string | undefined)[]; }}
+ */
 export function GenerateInformationCards({
   props,
 }: {
@@ -38,13 +41,7 @@ export function GenerateInformationCards({
     <div className="gap-16 mx-4 space-y-2 md:space-y-0 md:grid md:grid-cols-3">
       {informationCardsData.map((card) => (
         <div className="w-full hover:shadow-2xl" key={uuid()}>
-          <LazyLoadImage
-            alt={card.alt}
-            className="border-4 border-blue-900 rounded-xl "
-            height={card.height}
-            src={card.imgSrc}
-            width={card.width}
-          />
+          <InformationImage card={card} />
           <p className="p-2">{card.pText}</p>
         </div>
       ))}
