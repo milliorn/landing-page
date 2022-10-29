@@ -18,7 +18,6 @@ export function InformationImage({
     <div className="border-4 border-blue-900 rounded-xl ">
       <LazyLoadImage
         alt={card.alt}
-        className="border-4 border-blue-900 rounded-xl "
         height={card.height}
         src={card.imgSrc}
         width={card.width}
