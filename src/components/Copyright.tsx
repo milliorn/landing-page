@@ -1,3 +1,6 @@
+/**
+ * @param {{ owner: string }} props
+ */
 export function Copyright({
   props,
 }: {
