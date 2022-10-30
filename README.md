@@ -7,13 +7,13 @@
 [![pages-build-deployment](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment)
 [![DeepSource](https://deepsource.io/gh/milliorn/Landing-Page.svg/?label=active+issues&show_trend=true&token=c6fAfF33Ko5k1plSdosPj8yY)](https://deepsource.io/gh/milliorn/Landing-Page/?ref=repository-badge)
 
-This project was bootstrapped using `npx create-react-app my-app --template typescript`.   
+This project was bootstrapped using `npx create-react-app my-app --template typescript`.
 
 [Install Tailwind CSS with Create React App](https://tailwindcss.com/docs/guides/create-react-app)
 
 [react-lazy-load-image-component](https://github.com/Aljullu/react-lazy-load-image-component)
 
-[react-uui](https://github.com/RickBr0wn/react-uuid) 
+[react-uui](https://github.com/RickBr0wn/react-uuid)
 
 ## Available Scripts
 
