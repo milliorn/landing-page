@@ -1,7 +1,13 @@
+import { HeroImage } from "./HeroImage";
+
 /**
  * @param {{ hText: string; pText: string; bText: string; }} props
  */
-export function Hero(props: { hText: string; pText: string; bText: string }) {
+export function Hero(props: {
+  hText: string;
+  pText: string;
+  bText: string;
+}): JSX.Element {
   return (
     <div className="flex flex-col items-center mx-auto mb-12 sm:flex-row sm:mb-24">
       {/*<!--Left Col-->*/}
@@ -22,14 +28,9 @@ export function Hero(props: { hText: string; pText: string; bText: string }) {
       {/*<!--Right Col-->*/}
       <div className="w-full text-center lg:w-1/2 lg:py-6">
         {/*<!--Add your product image here-->*/}
-        <svg
-          className="w-3/5 mx-auto text-gray-800 fill-current"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 20 20"
-        >
-          <path d="M17 6V5h-2V2H3v14h5v4h3.25H11a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6zm-5.75 14H3a2 2 0 0 1-2-2V2c0-1.1.9-2 2-2h12a2 2 0 0 1 2 2v4a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-5.75zM11 8v8h6V8h-6zm3 11a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" />
-        </svg>
+        <HeroImage />
       </div>
     </div>
   );
 }
+
