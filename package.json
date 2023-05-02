@@ -62,9 +62,9 @@
   },
   "devDependencies": {
     "@types/node": "^18.16.3",
-    "@types/react": "^18.0.37",
+    "@types/react": "^18.2.0",
     "@types/react-dom": "^18.2.1",
-    "@types/react-lazy-load-image-component": "^1.5.2",
+    "@types/react-lazy-load-image-component": "^1.5.3",
     "autoprefixer": "10.4.14",
     "gh-pages": "5.0.0",
     "postcss": "8.4.23",
