@@ -2,7 +2,6 @@
 
 [![Dependency Review](https://github.com/milliorn/Landing-Page/actions/workflows/dependency-review.yml/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/dependency-review.yml)
 [![Lint Code Base](https://github.com/milliorn/Landing-Page/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/super-linter.yml)
-[![OSSAR](https://github.com/milliorn/Landing-Page/actions/workflows/ossar.yml/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/ossar.yml)
 [![pages-build-deployment](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment)
 [![DeepSource](https://deepsource.io/gh/milliorn/Landing-Page.svg/?label=active+issues&show_trend=true&token=c6fAfF33Ko5k1plSdosPj8yY)](https://deepsource.io/gh/milliorn/Landing-Page/?ref=repository-badge)
 [![DeepSource](https://deepsource.io/gh/milliorn/Landing-Page.svg/?label=resolved+issues&show_trend=true&token=c6fAfF33Ko5k1plSdosPj8yY)](https://deepsource.io/gh/milliorn/Landing-Page/?ref=repository-badge)
