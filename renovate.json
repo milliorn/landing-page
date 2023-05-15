@@ -1,26 +1,17 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
+  "extends": ["config:base"],
   "automerge": true,
-  "labels": [
-    "automerge"
-  ],
+  "labels": ["automerge"],
   "schedule": {
     "timezone": "UTC",
     "interval": "monthly",
-    "dates": [
-      1
-    ],
+    "dates": [1],
     "time": "00:00"
   },
   "packageRules": [
     {
-      "updateTypes": [
-        "minor",
-        "patch"
-      ]
+      "updateTypes": ["minor", "patch"]
     }
   ]
 }
