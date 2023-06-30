@@ -4,72 +4,36 @@
 [![Lint Code Base](https://github.com/milliorn/Landing-Page/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/super-linter.yml)
 [![pages-build-deployment](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment)
 
-This project was bootstrapped using `npx create-react-app my-app --template typescript`.
+This repository contains a template landing page site built using React and Tailwind CSS. It provides a starting point for creating beautiful and responsive landing pages.
 
-[Install Tailwind CSS with Create React App](https://tailwindcss.com/docs/guides/create-react-app)
+## Getting Started
 
-[react-lazy-load-image-component](https://github.com/Aljullu/react-lazy-load-image-component)
+To get started with the project, follow these steps:
 
-[react-uui](https://github.com/RickBr0wn/react-uuid)
+1. Clone the repository
+2. Install the dependencies: `npm install`
+3. Start the development server: `npm start`
 
-## Available Scripts
+The above command will run the app in development mode. Open [http://localhost:3000](http://localhost:3000) to view it in your browser. The page will automatically reload when you make changes.
 
-In the project directory, you can run:
+## Building for Production
 
-### `npm start`
+To build the app for production, use the following command `npm run build`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+This command will create a production-ready build of the app in the `build` folder. The build is optimized for performance and the filenames include hashes for cache busting.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Deployment
 
-### `npm run build`
+To deploy the app, you can use the following command `npm run deploy`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject` , you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject` . The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This command will deploy the app to the GitHub Pages. You can customize the deployment configuration in the `package.json` file.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To learn more about React, check out the [React documentation](https://reactjs.org/).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+To learn more about Tailwind CSS, check out the [Tailwind CSS documentation](https://tailwindcss.com/).
 
-### Code Splitting
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
