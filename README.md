@@ -1,6 +1,6 @@
 # Landing Page
 
-[![Lint Code Base](https://github.com/milliorn/Landing-Page/actions/workflows/super-linter.yml/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/super-linter.yml)
+[![CodeQL](https://github.com/milliorn/Landing-Page/actions/workflows/github-code-scanning/codeql/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/github-code-scanning/codeql)
 [![pages-build-deployment](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/milliorn/Landing-Page/actions/workflows/pages/pages-build-deployment)
 
 This repository contains a template landing page site built using React and Tailwind CSS. It provides a starting point for creating beautiful and responsive landing pages.
