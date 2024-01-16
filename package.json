@@ -61,14 +61,14 @@
     ]
   },
   "devDependencies": {
-    "@types/node": "^20.10.3",
+    "@types/node": "^20.10.6",
     "@types/react": "^18.2.34",
     "@types/react-dom": "^18.2.17",
-    "@types/react-lazy-load-image-component": "^1.6.2",
+    "@types/react-lazy-load-image-component": "^1.6.3",
     "autoprefixer": "10.4.16",
-    "gh-pages": "6.0.0",
+    "gh-pages": "6.1.1",
     "postcss": "8.4.31",
-    "tailwindcss": "3.3.5",
+    "tailwindcss": "3.4.1",
     "typescript": "^4.9.5"
   }
 }
