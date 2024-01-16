@@ -11,10 +11,10 @@
     "react",
     "tailwind"
   ],
-  "homepage": "http://milliorn.github.io/Landing-Page",
+  "homepage": "http://milliorn.github.io/landing-page",
   "bugs": {
     "email": "scottmilliorn@gmail.com",
-    "url": "https://github.com/milliorn/Landing-Page/issues"
+    "url": "https://github.com/milliorn/landing-page/issues"
   },
   "license": "MIT",
   "author": {
@@ -25,7 +25,7 @@
   "repository": {
     "repository": {
       "type": "git",
-      "url": "https://github.com/milliorn/React-Tailwind-Landing-Page.git"
+      "url": "https://github.com/milliorn/landing-page.git"
     }
   },
   "private": true,
@@ -69,6 +69,6 @@
     "gh-pages": "6.0.0",
     "postcss": "8.4.31",
     "tailwindcss": "3.3.5",
-    "typescript": "^5.3.2"
+    "typescript": "^4.9.5"
   }
 }
