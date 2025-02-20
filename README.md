@@ -36,3 +36,7 @@ To learn more about Tailwind CSS, check out the [Tailwind CSS documentation](htt
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+## Preview
+
+![Landing Page](public/lighthouse.png)
