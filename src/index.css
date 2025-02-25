@@ -7,3 +7,7 @@ body {
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
 }
+
+.animate {
+  animation: ease-in-out fadeIn 100s;
+}
