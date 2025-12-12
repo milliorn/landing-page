@@ -33,4 +33,3 @@ export function Hero(props: {
     </div>
   );
 }
-
