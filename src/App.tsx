@@ -9,7 +9,7 @@ import { heading, img, links, paragraphText, text } from "./data";
 /* main app */
 export default function App(): JSX.Element {
   return (
-    <div className="m-0 mx-auto antialiased bg-gray-900 2xl:container">
+    <main className="m-0 mx-auto antialiased bg-gray-900 2xl:container">
       <NavBar
         linkFirst={links[0]}
         linkLast={links[2]}
@@ -25,6 +25,6 @@ export default function App(): JSX.Element {
       <Quote author={text[2]} quote={text[1]} />
       <Contact button={text[0]} h2={heading[2]} p={paragraphText[4]} />
       <Footer owner={text[4]} />
-    </div>
+    </main>
   );
 }
