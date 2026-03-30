@@ -23,10 +23,8 @@
     "url": "https://github.com/milliorn"
   },
   "repository": {
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/milliorn/landing-page.git"
-    }
+    "type": "git",
+    "url": "https://github.com/milliorn/landing-page.git"
   },
   "private": true,
   "dependencies": {
