@@ -26,6 +26,9 @@
     "type": "git",
     "url": "https://github.com/milliorn/landing-page.git"
   },
+  "engines": {
+    "node": ">=24"
+  },
   "private": true,
   "dependencies": {
     "framer-motion": "^12.34.3",
