@@ -38,28 +38,11 @@
     "react-uuid": "^2.0.0"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
-    "start": "react-scripts start"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "preview": "vite preview",
+    "start": "vite"
   },
   "devDependencies": {
     "@types/node": "^24.0.0",
