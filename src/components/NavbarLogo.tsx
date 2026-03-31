@@ -16,8 +16,6 @@ export function NavbarLogo({
       <a
         className="no-underline text-gray-50 hover:text-gray-50 hover:no-underline"
         href="/"
-        target="_blank"
-        rel="noreferrer"
       >
         <span className="pl-4 text-2xl capitalize hover:animate-pulse">
           {props.logo}
