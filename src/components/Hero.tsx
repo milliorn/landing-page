@@ -1,13 +1,6 @@
 import { HeroImage } from "./HeroImage";
 
-/**
- * @param {{ hText: string; pText: string; bText: string; }} props
- */
-export function Hero(props: {
-  hText: string;
-  pText: string;
-  bText: string;
-}): JSX.Element {
+export function Hero(props: { hText: string; pText: string; bText: string }) {
   return (
     <div className="flex flex-col items-center mx-auto mb-12 sm:flex-row sm:mb-24">
       {/*<!--Left Col-->*/}

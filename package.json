@@ -11,7 +11,7 @@
     "react",
     "tailwind"
   ],
-  "homepage": "http://milliorn.github.io/landing-page",
+  "homepage": "https://milliorn.github.io/landing-page",
   "bugs": {
     "email": "scottmilliorn@gmail.com",
     "url": "https://github.com/milliorn/landing-page/issues"
@@ -23,53 +23,33 @@
     "url": "https://github.com/milliorn"
   },
   "repository": {
-    "repository": {
-      "type": "git",
-      "url": "https://github.com/milliorn/landing-page.git"
-    }
+    "type": "git",
+    "url": "https://github.com/milliorn/landing-page.git"
+  },
+  "engines": {
+    "node": ">=24"
   },
   "private": true,
   "dependencies": {
-    "framer-motion": "^12.34.3",
-    "react": "18.3.1",
-    "react-dom": "18.3.1",
-    "react-lazy-load-image-component": "^1.6.3",
-    "react-scripts": "5.0.1",
-    "react-uuid": "^2.0.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "scripts": {
-    "build": "react-scripts build",
-    "deploy": "gh-pages -d build",
-    "eject": "react-scripts eject",
+    "build": "vite build",
+    "deploy": "gh-pages -d dist",
     "predeploy": "npm run build",
-    "start": "react-scripts start"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "preview": "vite preview",
+    "start": "vite"
   },
   "devDependencies": {
-    "@types/node": "^20.19.35",
-    "@types/react": "^18.2.34",
-    "@types/react-dom": "^18.2.17",
-    "@types/react-lazy-load-image-component": "^1.6.4",
-    "autoprefixer": "10.4.27",
-    "gh-pages": "6.3.0",
-    "postcss": "8.5.6",
-    "tailwindcss": "3.4.19",
-    "typescript": "^4.9.5"
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^6.0.1",
+    "@tailwindcss/vite": "^4.2.2",
+    "gh-pages": "^6.3.0",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^6.0.2",
+    "vite": "^8.0.3"
   }
 }
