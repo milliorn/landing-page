@@ -3,7 +3,7 @@
  */
 import { motion } from "framer-motion";
 
-export function Quote(props: { quote: string; author: string }): JSX.Element {
+export function Quote(props: { quote: string; author: string }) {
   return (
     <div className="bg-gray-200 p-24">
       <motion.div

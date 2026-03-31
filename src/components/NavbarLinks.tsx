@@ -12,7 +12,7 @@ export function NavbarLinks({
     linkMiddle: string;
     linkLast: string;
   };
-}): JSX.Element {
+}) {
   const navbarLinksData = [
     { href: "/", linkText: props.linkFirst },
     { href: "/", linkText: props.linkMiddle },

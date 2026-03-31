@@ -10,7 +10,7 @@ export function NavbarLogo({
     linkMiddle: string;
     linkLast: string;
   };
-}): JSX.Element {
+}) {
   return (
     <div className="flex justify-center w-full text-gray-50 sm:w-1/2 sm:justify-start">
       <a

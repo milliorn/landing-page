@@ -3,7 +3,7 @@ import { Copyright } from "./Copyright";
 /**
  * @param {{ owner: string; }} props
  */
-export function Footer(props: { owner: string }): JSX.Element {
+export function Footer(props: { owner: string }) {
   const url = "https://github.com/milliorn" as string;
   return (
     <footer className="bg-gray-800">

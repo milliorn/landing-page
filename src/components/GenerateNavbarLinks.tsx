@@ -6,7 +6,7 @@ export function GenerateNavbarLinks({
   navbarLinksData,
 }: {
   navbarLinksData: { href: string; linkText: string }[];
-}): JSX.Element[] {
+}) {
   return navbarLinksData.map((link) => (
     <li className="mr-3 sm:mb-2" key={uuid()}>
       <a

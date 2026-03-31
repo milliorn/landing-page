@@ -12,7 +12,7 @@ export function GenerateInformationCards({
     img: (string | undefined)[];
     paragraph: (string | undefined)[];
   };
-}): JSX.Element {
+}) {
   const informationCardsData = [
     {
       imgSrc: props.img[0],

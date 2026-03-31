@@ -1,5 +1,5 @@
 /* create hero image */
-export function HeroImage(): JSX.Element {
+export function HeroImage() {
   return (
     <svg
       className="w-3/5 mx-auto text-gray-800 fill-current"

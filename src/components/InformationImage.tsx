@@ -13,7 +13,7 @@ export function InformationImage({
     width: number;
     height: number;
   };
-}): JSX.Element {
+}) {
   return (
     <div className="border-4 border-blue-900 rounded-xl ">
       <LazyLoadImage
