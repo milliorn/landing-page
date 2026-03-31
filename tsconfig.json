@@ -15,7 +15,10 @@
     "resolveJsonModule": true,
     "skipLibCheck": true,
     "exactOptionalPropertyTypes": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
     "noUncheckedIndexedAccess": true,
+    "noUncheckedSideEffectImports": true,
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true
