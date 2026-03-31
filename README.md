@@ -4,13 +4,12 @@ A template landing page built with React 19, TypeScript, Tailwind CSS 4, and Vit
 
 ## Stack
 
-| Tool          | Version | Purpose                      |
-| ------------- | ------- | ---------------------------- |
-| React         | 19      | UI framework                 |
-| TypeScript    | 6       | Type safety                  |
-| Tailwind CSS  | 4       | Utility-first styling        |
-| Vite          | 8       | Build tooling and dev server |
-| Framer Motion | 12      | Animations                   |
+| Tool         | Version | Purpose                      |
+| ------------ | ------- | ---------------------------- |
+| React        | 19      | UI framework                 |
+| TypeScript   | 6       | Type safety                  |
+| Tailwind CSS | 4       | Utility-first styling        |
+| Vite         | 8       | Build tooling and dev server |
 
 ## Prerequisites
 
@@ -52,7 +51,6 @@ Live site: [https://milliorn.github.io/landing-page](https://milliorn.github.io/
 - [TypeScript](https://www.typescriptlang.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [Vite](https://vite.dev/)
-- [Framer Motion](https://motion.dev/)
 
 ## License
 

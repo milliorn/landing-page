@@ -31,7 +31,6 @@
   },
   "private": true,
   "dependencies": {
-    "framer-motion": "^12.38.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-lazy-load-image-component": "^1.6.3"
