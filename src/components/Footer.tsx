@@ -4,7 +4,7 @@ import { Copyright } from "./Copyright";
  * @param {{ owner: string; }} props
  */
 export function Footer(props: { owner: string }) {
-  const url = "https://github.com/milliorn" as string;
+  const url = "https://github.com/milliorn";
   return (
     <footer className="bg-gray-800">
       <a href={url} target="_blank" rel="noreferrer">
