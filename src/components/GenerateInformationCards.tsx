@@ -8,8 +8,8 @@ export function GenerateInformationCards({
 }: {
   props: {
     infoHeading: string;
-    img: (string | undefined)[];
-    paragraph: (string | undefined)[];
+    img: readonly string[];
+    paragraph: readonly string[];
   };
 }) {
   const informationCardsData = [

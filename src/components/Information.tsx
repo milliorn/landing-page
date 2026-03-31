@@ -5,8 +5,8 @@ import { GenerateInformationCards } from "./GenerateInformationCards";
  */
 export function Information(props: {
   infoHeading: string;
-  img: (string | undefined)[];
-  paragraph: (string | undefined)[];
+  img: readonly string[];
+  paragraph: readonly string[];
 }) {
   return (
     <div className="pb-4 text-gray-900 sm:pb-8 bg-gray-50">
