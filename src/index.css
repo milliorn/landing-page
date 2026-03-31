@@ -15,9 +15,6 @@ body {
     sans-serif;
 }
 
-.animate {
-  animation: ease-in-out fadeIn 100s;
-}
 
 @keyframes slide-in {
   from {
