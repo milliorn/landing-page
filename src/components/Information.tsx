@@ -10,7 +10,7 @@ export function Information(props: {
       <h1 className="p-12 text-4xl font-extrabold text-center">
         {props.infoHeading}
       </h1>
-      <GenerateInformationCards props={props} />
+      <GenerateInformationCards img={props.img} paragraph={props.paragraph} />
     </div>
   );
 }
