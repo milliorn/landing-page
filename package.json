@@ -32,8 +32,7 @@
   "private": true,
   "dependencies": {
     "react": "^19.2.4",
-    "react-dom": "^19.2.4",
-    "react-lazy-load-image-component": "^1.6.3"
+    "react-dom": "^19.2.4"
   },
   "scripts": {
     "build": "vite build",
@@ -46,7 +45,6 @@
     "@types/node": "^25.5.0",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
-    "@types/react-lazy-load-image-component": "^1.6.5",
     "@vitejs/plugin-react": "^6.0.1",
     "@tailwindcss/vite": "^4.2.2",
     "gh-pages": "^6.3.0",
