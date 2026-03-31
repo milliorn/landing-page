@@ -13,7 +13,7 @@ export function NavBar(props: {
   return (
     <nav className="w-full p-2 mt-0 bg-gray-800">
       <div className="flex flex-wrap items-center mx-auto ">
-        <NavbarLogo props={props} />
+        <NavbarLogo logo={props.logo} />
         <NavbarLinks props={props} />
       </div>
     </nav>
