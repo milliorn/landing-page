@@ -1,9 +1,6 @@
 import { NavbarLinks } from "./NavbarLinks";
 import { NavbarLogo } from "./NavbarLogo";
 
-/**
- * @param {{ logo: string; linkFirst: string; linkMiddle: string; linkLast: string; }} props
- */
 export function NavBar(props: {
   logo: string;
   linkFirst: string;

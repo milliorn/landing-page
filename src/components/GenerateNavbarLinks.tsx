@@ -1,6 +1,3 @@
-/**
- * @param {{ href: string; linkText: string }} props
- */
 export function GenerateNavbarLinks({
   navbarLinksData,
 }: {

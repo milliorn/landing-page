@@ -1,6 +1,3 @@
-/**
- * @param {{ h2: string; p: string; button: string; }} props
- */
 export function Contact(props: { h2: string; p: string; button: string }) {
   return (
     <div className="top-0 left-0 w-full h-full p-12 text-sm text-center sm:text-base text-gray-50 bg-gray-50">

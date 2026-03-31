@@ -1,6 +1,3 @@
-/**
- * @param {{ imgSrc: string | undefined; alt: string; pText: string | undefined; width: number height: number; }}
- */
 export function InformationImage({
   card,
 }: {

@@ -1,8 +1,5 @@
 import { GenerateNavbarLinks } from "./GenerateNavbarLinks";
 
-/**
- * @param {{ logo: string; linkFirst: string; linkMiddle: string; linkLast: string; }} props
- */
 export function NavbarLinks({
   props,
 }: {

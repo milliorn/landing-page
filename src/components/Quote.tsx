@@ -1,6 +1,3 @@
-/**
- * @param {{ quote: string; author: string; }} props
- */
 export function Quote(props: { quote: string; author: string }) {
   return (
     <div className="bg-gray-200 p-24">

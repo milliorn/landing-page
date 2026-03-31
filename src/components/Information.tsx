@@ -1,8 +1,5 @@
 import { GenerateInformationCards } from "./GenerateInformationCards";
 
-/**
- * @param {{ infoHeading: string; img: (string | undefined)[]; paragraph: (string | undefined)[]; }} props
- */
 export function Information(props: {
   infoHeading: string;
   img: readonly [string, string, string];
