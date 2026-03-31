@@ -4,7 +4,6 @@ export function InformationImage({
   card: {
     imgSrc: string;
     alt: string;
-    pText: string;
     width: number;
     height: number;
   };
