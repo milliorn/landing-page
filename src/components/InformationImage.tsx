@@ -5,9 +5,9 @@ export function InformationImage({
   card,
 }: {
   card: {
-    imgSrc: string | undefined;
+    imgSrc: string;
     alt: string;
-    pText: string | undefined;
+    pText: string;
     width: number;
     height: number;
   };
