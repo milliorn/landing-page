@@ -1,4 +1,3 @@
-/* create hero image */
 export function HeroImage() {
   return (
     <svg

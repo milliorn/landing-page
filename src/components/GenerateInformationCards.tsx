@@ -1,33 +1,31 @@
 import { InformationImage } from "./InformationImage";
 
 export function GenerateInformationCards({
-  props,
+  img,
+  paragraph,
 }: {
-  props: {
-    infoHeading: string;
-    img: readonly [string, string, string];
-    paragraph: readonly [string, string, string, string, string];
-  };
+  img: readonly [string, string, string];
+  paragraph: readonly [string, string, string, string, string];
 }) {
   const informationCardsData = [
     {
-      imgSrc: props.img[0],
+      imgSrc: img[0],
       alt: "image1",
-      pText: props.paragraph[0],
+      pText: paragraph[0],
       width: 1470,
       height: 980,
     },
     {
-      imgSrc: props.img[1],
+      imgSrc: img[1],
       alt: "image2",
-      pText: props.paragraph[1],
+      pText: paragraph[1],
       width: 935,
       height: 624,
     },
     {
-      imgSrc: props.img[2],
+      imgSrc: img[2],
       alt: "image3",
-      pText: props.paragraph[2],
+      pText: paragraph[2],
       width: 935,
       height: 624,
     },

@@ -1,19 +1,18 @@
 import { GenerateNavbarLinks } from "./GenerateNavbarLinks";
 
 export function NavbarLinks({
-  props,
+  linkFirst,
+  linkMiddle,
+  linkLast,
 }: {
-  props: {
-    logo: string;
-    linkFirst: string;
-    linkMiddle: string;
-    linkLast: string;
-  };
+  linkFirst: string;
+  linkMiddle: string;
+  linkLast: string;
 }) {
   const navbarLinksData = [
-    { href: "/", linkText: props.linkFirst },
-    { href: "/", linkText: props.linkMiddle },
-    { href: "/", linkText: props.linkLast },
+    { href: "/", linkText: linkFirst },
+    { href: "/", linkText: linkMiddle },
+    { href: "/", linkText: linkLast },
   ];
 
   return (

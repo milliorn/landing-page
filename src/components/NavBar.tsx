@@ -11,7 +11,11 @@ export function NavBar(props: {
     <nav className="w-full p-2 mt-0 bg-gray-800">
       <div className="flex flex-wrap items-center mx-auto ">
         <NavbarLogo logo={props.logo} />
-        <NavbarLinks props={props} />
+        <NavbarLinks
+          linkFirst={props.linkFirst}
+          linkMiddle={props.linkMiddle}
+          linkLast={props.linkLast}
+        />
       </div>
     </nav>
   );

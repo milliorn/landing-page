@@ -5,7 +5,7 @@ export function Footer(props: { owner: string }) {
   return (
     <footer className="bg-gray-800">
       <a href={url} target="_blank" rel="noreferrer">
-        <Copyright props={props} />
+        <Copyright owner={props.owner} />
       </a>
     </footer>
   );
