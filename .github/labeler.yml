@@ -1,0 +1,53 @@
+javascript:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/**/*.ts
+          - src/**/*.tsx
+          - src/**/*.js
+          - src/**/*.jsx
+
+components:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/components/**
+
+styles:
+  - changed-files:
+      - any-glob-to-any-file:
+          - src/**/*.css
+          - src/**/*.scss
+
+assets:
+  - changed-files:
+      - any-glob-to-any-file:
+          - public/**
+
+configuration:
+  - changed-files:
+      - any-glob-to-any-file:
+          - tsconfig*.json
+          - vite.config.*
+          - package.json
+          - package-lock.json
+          - index.html
+          - .gitignore
+          - .eslintrc*
+          - .prettierrc*
+
+github_actions:
+  - changed-files:
+      - any-glob-to-any-file:
+          - .github/workflows/**
+          - .github/dependabot.yml
+
+documentation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - '**/*.md'
+          - LICENSE
+
+dependencies:
+  - changed-files:
+      - any-glob-to-any-file:
+          - package.json
+          - package-lock.json
