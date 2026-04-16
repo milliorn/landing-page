@@ -43,7 +43,7 @@ github_actions:
 documentation:
   - changed-files:
       - any-glob-to-any-file:
-          - '**/*.md'
+          - "**/*.md"
           - LICENSE
 
 dependencies:
