@@ -22,7 +22,6 @@ permissions:
   contents: write
 
 env:
-  # Opt into Node.js 24 now ahead of the June 2, 2026 forced migration.
   FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
@@ -40,17 +39,19 @@ jobs:
         id: metadata
         uses: dependabot/fetch-metadata@v3.1.0
 
-      # Decide once: allow github-actions (any semver) or patch/minor updates;
-      # deny everything else. Major updates are filtered upstream by dependabot.yml,
-      # so deny is a safety net for anything unexpected that slips through.
+      # Allow: github_actions (major version tags are safe), patch/minor npm/pip/etc.,
+      # or grouped PRs where update-type is null (dependabot.yml already blocks npm majors).
+      # Deny: anything else (unexpected major npm/pip bumps that slip through).
       - name: Decide
         id: decision
         run: |
           ecosystem="${{ steps.metadata.outputs.package-ecosystem }}"
           update_type="${{ steps.metadata.outputs.update-type }}"
-          if [[ "$ecosystem" == "github-actions" ]] || \
+          if [[ "$ecosystem" == "github_actions" ]] || \
              [[ "$update_type" == "version-update:semver-patch" ]] || \
-             [[ "$update_type" == "version-update:semver-minor" ]]; then
+             [[ "$update_type" == "version-update:semver-minor" ]] || \
+             [[ "$update_type" == "null" ]] || \
+             [[ -z "$update_type" ]]; then
             echo "action=allow" >> "$GITHUB_OUTPUT"
           else
             echo "action=deny" >> "$GITHUB_OUTPUT"
