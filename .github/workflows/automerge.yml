@@ -21,18 +21,23 @@ permissions:
   pull-requests: write
   contents: write
 
-env:
-  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-
 jobs:
   review-dependabot-pr:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 2
     # Skip entirely if this PR wasn't opened by Dependabot.
     if: ${{ github.event.pull_request.user.login == 'dependabot[bot]' }}
     env:
       PR_URL: ${{ github.event.pull_request.html_url }}
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # PAT, not GITHUB_TOKEN: a GITHUB_TOKEN-authored merge can't trigger
+      # other workflow runs (GitHub's anti-recursion protection), so it would
+      # silently never fire dependabot-rebase-cascade.yml's trigger, and
+      # stale sibling PRs would never get rebased. A PAT-authenticated merge
+      # is a normal event and triggers it correctly. Needs Contents:
+      # read/write in addition to Pull requests: read/write, or --auto fails
+      # with "Resource not accessible by personal access token
+      # (enablePullRequestAutoMerge)".
+      GITHUB_TOKEN: ${{ secrets.DEPENDABOT_REBASE_PAT }}
 
     steps:
       - name: Dependabot metadata
