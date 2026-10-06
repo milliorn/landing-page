@@ -28,9 +28,6 @@ jobs:
             --state open \
             --json number \
             --jq '.[].number' | \
-          while read -r pr; do
-            echo "Requesting rebase on PR #$pr"
-            gh pr comment "$pr" \
-              --repo "${{ github.repository }}" \
-              --body "@dependabot rebase"
-          done
+          xargs -P 8 -I{} gh pr comment {} \
+            --repo "${{ github.repository }}" \
+            --body "@dependabot rebase"
