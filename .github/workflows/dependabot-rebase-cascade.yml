@@ -10,8 +10,8 @@ permissions:
 
 jobs:
   rebase-stale-dependabot-prs:
-    runs-on: ubuntu-24.04
-    timeout-minutes: 5
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
     # Only fire when a Dependabot PR was actually merged (not closed/abandoned)
     if: |
       github.event.pull_request.merged == true &&
