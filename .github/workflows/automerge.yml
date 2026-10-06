@@ -37,7 +37,7 @@ jobs:
       # read/write in addition to Pull requests: read/write, or --auto fails
       # with "Resource not accessible by personal access token
       # (enablePullRequestAutoMerge)".
-      GITHUB_TOKEN: ${{ secrets.DEPENDABOT_REBASE_PAT }}
+      GH_TOKEN: ${{ secrets.DEPENDABOT_REBASE_PAT }}
 
     steps:
       - name: Dependabot metadata
