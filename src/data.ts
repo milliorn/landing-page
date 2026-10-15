@@ -1,32 +1,32 @@
 interface InfoCard {
-  alt: string;
-  height: number;
-  imgSrc: string;
-  pText: string;
-  width: number;
+  readonly alt: string;
+  readonly height: number;
+  readonly imgSrc: string;
+  readonly pText: string;
+  readonly width: number;
 }
 
 interface Content {
-  navLogo: string;
-  navLinkFirst: string;
-  navLinkMiddle: string;
-  navLinkLast: string;
+  readonly navLogo: string;
+  readonly navLinkFirst: string;
+  readonly navLinkMiddle: string;
+  readonly navLinkLast: string;
 
-  heroHeading: string;
-  heroBody: string;
-  heroButtonLabel: string;
+  readonly heroHeading: string;
+  readonly heroBody: string;
+  readonly heroButtonLabel: string;
 
-  infoHeading: string;
-  infoCards: readonly InfoCard[];
+  readonly infoHeading: string;
+  readonly infoCards: readonly InfoCard[];
 
-  quote: string;
-  quoteAuthor: string;
+  readonly quote: string;
+  readonly quoteAuthor: string;
 
-  contactHeading: string;
-  contactBody: string;
-  contactButtonLabel: string;
+  readonly contactHeading: string;
+  readonly contactBody: string;
+  readonly contactButtonLabel: string;
 
-  footerOwner: string;
+  readonly footerOwner: string;
 }
 
 const content: Content = {
