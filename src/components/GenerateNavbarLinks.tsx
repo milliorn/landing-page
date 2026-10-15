@@ -12,7 +12,7 @@ export function GenerateNavbarLinks({
           <a
             className="inline-block px-4 py-2 text-gray-200 no-underline hover:animate-pulse hover:text-gray-200"
             href={link.href}
-            {...navLinkRelAttrs(link)}
+            {...navLinkRelAttrs(link.href)}
           >
             {link.linkText}
           </a>

@@ -1,11 +1,10 @@
 export interface NavLink {
-  external?: boolean;
   href: string;
   linkText: string;
 }
 
-export function navLinkRelAttrs(link: NavLink) {
-  return link.external
+export function navLinkRelAttrs(href: string) {
+  return /^https?:\/\//i.test(href)
     ? { target: "_blank" as const, rel: "noreferrer" as const }
     : {};
 }
