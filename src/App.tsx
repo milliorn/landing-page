@@ -4,26 +4,34 @@ import { Hero } from "./components/Hero";
 import { Information } from "./components/Information";
 import { NavBar } from "./components/NavBar";
 import { Quote } from "./components/Quote";
-import { heading, img, links, paragraphText, text } from "./data";
+import { content } from "./data";
 
 export default function App() {
   return (
     <main className="m-0 mx-auto antialiased bg-gray-900 2xl:container">
       <NavBar
-        linkFirst={links[0]}
-        linkLast={links[2]}
-        linkMiddle={links[1]}
-        logo={text[3]}
+        linkFirst={content.navLinkFirst}
+        linkLast={content.navLinkLast}
+        linkMiddle={content.navLinkMiddle}
+        logo={content.navLogo}
       />
-      <Hero bText={text[0]} hText={heading[0]} pText={paragraphText[3]} />
+      <Hero
+        bText={content.heroButtonLabel}
+        hText={content.heroHeading}
+        pText={content.heroBody}
+      />
       <Information
-        img={img}
-        infoHeading={heading[1]}
-        paragraph={paragraphText}
+        img={content.infoImages}
+        infoHeading={content.infoHeading}
+        paragraph={content.infoParagraphs}
       />
-      <Quote author={text[2]} quote={text[1]} />
-      <Contact button={text[0]} h2={heading[2]} p={paragraphText[4]} />
-      <Footer owner={text[4]} />
+      <Quote author={content.quoteAuthor} quote={content.quote} />
+      <Contact
+        button={content.contactButtonLabel}
+        h2={content.contactHeading}
+        p={content.contactBody}
+      />
+      <Footer owner={content.footerOwner} />
     </main>
   );
 }
