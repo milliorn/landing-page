@@ -16,7 +16,7 @@ export default function App() {
         logo={content.navLogo}
       />
       <Hero
-        bText={content.signUpLabel}
+        bText={content.heroButtonLabel}
         hText={content.heroHeading}
         pText={content.heroBody}
       />
@@ -27,7 +27,7 @@ export default function App() {
       />
       <Quote author={content.quoteAuthor} quote={content.quote} />
       <Contact
-        button={content.signUpLabel}
+        button={content.contactButtonLabel}
         h2={content.contactHeading}
         p={content.contactBody}
       />

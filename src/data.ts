@@ -7,7 +7,7 @@ const content = {
   heroHeading: "react tailwind",
   heroBody:
     "Lorem ipsum dolor sit amet, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  signUpLabel: "sign up",
+  heroButtonLabel: "sign up",
 
   infoHeading: "information heading",
   infoImages: [
@@ -27,6 +27,7 @@ const content = {
 
   contactHeading: "join us! lorem ipsum",
   contactBody: "Sign up for more lorem ipsum",
+  contactButtonLabel: "sign up",
 
   footerOwner: "Scott Milliorn",
 } as const;
