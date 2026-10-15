@@ -28,7 +28,7 @@
     "url": "https://github.com/milliorn/landing-page.git"
   },
   "engines": {
-    "node": ">=24"
+    "node": ">=24.15.0"
   },
   "private": true,
   "dependencies": {
@@ -38,19 +38,32 @@
   "scripts": {
     "build": "vite build",
     "deploy": "gh-pages -d dist",
+    "lint": "eslint .",
     "predeploy": "npm run build",
     "preview": "vite preview",
-    "start": "vite"
+    "start": "vite",
+    "test": "vitest run",
+    "typecheck": "tsc -b"
   },
   "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@tailwindcss/vite": "^4.3.3",
+    "@testing-library/jest-dom": "^7.0.1",
+    "@testing-library/react": "^16.3.3",
     "@types/node": "^25.9.9",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.1",
-    "@tailwindcss/vite": "^4.3.3",
+    "eslint": "^10.12.0",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-react-refresh": "^0.5.7",
     "gh-pages": "^6.3.0",
+    "globals": "^17.13.0",
+    "jsdom": "^30.1.2",
     "tailwindcss": "^4.3.3",
     "typescript": "^6.0.3",
-    "vite": "^8.3.2"
+    "typescript-eslint": "^8.71.2",
+    "vite": "^8.3.2",
+    "vitest": "^5.0.4"
   }
 }

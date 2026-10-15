@@ -1,10 +1,12 @@
 import { Copyright } from "./Copyright";
+import { navLinkRelAttrs } from "./NavLink";
+
+const githubUrl = "https://github.com/milliorn";
 
 export function Footer(props: { owner: string }) {
-  const url = "https://github.com/milliorn";
   return (
     <footer className="bg-gray-800">
-      <a href={url} target="_blank" rel="noreferrer">
+      <a href={githubUrl} {...navLinkRelAttrs(githubUrl)}>
         <Copyright owner={props.owner} />
       </a>
     </footer>
