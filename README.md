@@ -35,6 +35,11 @@ The dev server starts at `http://localhost:5173/landing-page/`.
 | `npm run preview` | Preview the production build locally   |
 | `npm run deploy`  | Deploy to GitHub Pages                 |
 
+## Customizing the template
+
+- `src/data.ts` holds all placeholder copy, nav links, and image URLs as a single named `content` object. Replace each field's value with your own content; `App.tsx` passes these fields to each component by name.
+- The sign-up buttons in `Hero` and `Contact` are intentionally unwired (no `onClick`/form submission) since this is a template. Hook them up to your own handler or form as needed.
+
 ## Deployment
 
 The app is deployed to GitHub Pages via the `gh-pages` package. The `predeploy` script runs `build` automatically before deploying.

@@ -5,7 +5,7 @@ export function GenerateInformationCards({
   paragraph,
 }: {
   img: readonly [string, string, string];
-  paragraph: readonly [string, string, string, string, string];
+  paragraph: readonly [string, string, string];
 }) {
   const informationCardsData = [
     {
