@@ -21,9 +21,8 @@ export default function App() {
         pText={content.heroBody}
       />
       <Information
-        img={content.infoImages}
+        cards={content.infoCards}
         infoHeading={content.infoHeading}
-        paragraph={content.infoParagraphs}
       />
       <Quote author={content.quoteAuthor} quote={content.quote} />
       <Contact
