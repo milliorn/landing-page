@@ -42,7 +42,7 @@ jobs:
     steps:
       - name: Dependabot metadata
         id: metadata
-        uses: dependabot/fetch-metadata@v3.1.0
+        uses: dependabot/fetch-metadata@25dd0e34f4fe68f24cc83900b1fe3fe149efef98 # v3.1.0
 
       # Allow: github_actions (major version tags are safe), patch/minor npm/pip/etc.,
       # or grouped PRs where update-type is null (dependabot.yml already blocks npm majors).
