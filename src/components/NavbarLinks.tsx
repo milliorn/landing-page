@@ -1,3 +1,4 @@
+import { sectionIds } from "../sectionIds";
 import { GenerateNavbarLinks } from "./GenerateNavbarLinks";
 
 export function NavbarLinks({
@@ -10,9 +11,18 @@ export function NavbarLinks({
   linkLast: string;
 }) {
   const navbarLinksData = [
-    { href: `${import.meta.env.BASE_URL}#hero`, linkText: linkFirst },
-    { href: `${import.meta.env.BASE_URL}#info`, linkText: linkMiddle },
-    { href: `${import.meta.env.BASE_URL}#contact`, linkText: linkLast },
+    {
+      href: `${import.meta.env.BASE_URL}#${sectionIds.hero}`,
+      linkText: linkFirst,
+    },
+    {
+      href: `${import.meta.env.BASE_URL}#${sectionIds.info}`,
+      linkText: linkMiddle,
+    },
+    {
+      href: `${import.meta.env.BASE_URL}#${sectionIds.contact}`,
+      linkText: linkLast,
+    },
   ];
 
   return (

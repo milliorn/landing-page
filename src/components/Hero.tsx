@@ -1,9 +1,10 @@
+import { sectionIds } from "../sectionIds";
 import { HeroImage } from "./HeroImage";
 
 export function Hero(props: { hText: string; pText: string; bText: string }) {
   return (
     <div
-      id="hero"
+      id={sectionIds.hero}
       className="flex flex-col items-center mx-auto mb-12 sm:flex-row sm:mb-24"
     >
       <div className="flex flex-col items-start justify-center w-full px-6 pt-12 pb-24 lg:w-1/2 text-gray-50">
