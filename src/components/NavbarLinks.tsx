@@ -10,9 +10,9 @@ export function NavbarLinks({
   linkLast: string;
 }) {
   const navbarLinksData = [
-    { href: import.meta.env.BASE_URL, linkText: linkFirst },
-    { href: import.meta.env.BASE_URL, linkText: linkMiddle },
-    { href: import.meta.env.BASE_URL, linkText: linkLast },
+    { href: `${import.meta.env.BASE_URL}#hero`, linkText: linkFirst },
+    { href: `${import.meta.env.BASE_URL}#info`, linkText: linkMiddle },
+    { href: `${import.meta.env.BASE_URL}#contact`, linkText: linkLast },
   ];
 
   return (
