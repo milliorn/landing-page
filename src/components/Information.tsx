@@ -8,9 +8,9 @@ export function Information(props: {
 }) {
   return (
     <div id={sectionIds.info} className="pb-4 text-gray-900 sm:pb-8 bg-gray-50">
-      <h1 className="p-12 text-4xl font-extrabold text-center">
+      <h2 className="p-12 text-4xl font-extrabold text-center">
         {props.infoHeading}
-      </h1>
+      </h2>
       <GenerateInformationCards cards={props.cards} />
     </div>
   );

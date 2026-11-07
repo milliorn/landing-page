@@ -1,13 +1,6 @@
-export function InformationImage({
-  card,
-}: {
-  card: {
-    imgSrc: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-}) {
+import type { InfoCard } from "../data";
+
+export function InformationImage({ card }: { card: InfoCard }) {
   return (
     <div className="border-4 border-blue-900 rounded-xl ">
       <img
