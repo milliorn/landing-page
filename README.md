@@ -63,4 +63,4 @@ MIT — see [LICENSE](LICENSE) for details.
 
 ## Preview
 
-![Landing Page](public/lighthouse.png)
+![Landing Page](docs/lighthouse.png)
