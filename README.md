@@ -28,12 +28,15 @@ The dev server starts at `http://localhost:5173/landing-page/`.
 
 ## Scripts
 
-| Command           | Description                            |
-| ----------------- | -------------------------------------- |
-| `npm start`       | Start the Vite dev server              |
-| `npm run build`   | Build for production (output: `dist/`) |
-| `npm run preview` | Preview the production build locally   |
-| `npm run deploy`  | Deploy to GitHub Pages                 |
+| Command             | Description                            |
+| ------------------- | -------------------------------------- |
+| `npm start`         | Start the Vite dev server              |
+| `npm run build`     | Build for production (output: `dist/`) |
+| `npm run preview`   | Preview the production build locally   |
+| `npm run deploy`    | Deploy to GitHub Pages                 |
+| `npm run lint`      | Lint the codebase with ESLint          |
+| `npm run typecheck` | Type-check the codebase with `tsc`     |
+| `npm test`          | Run the test suite with Vitest         |
 
 ## Customizing the template
 

@@ -2,17 +2,8 @@
 
 body {
   font-family:
-    "Roboto",
-    -apple-system,
-    BlinkMacSystemFont,
-    "Segoe UI",
-    "Oxygen",
-    "Ubuntu",
-    "Cantarell",
-    "Fira Sans",
-    "Droid Sans",
-    "Helvetica Neue",
-    sans-serif;
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
 }
 
 @keyframes slide-in {
@@ -28,4 +19,10 @@ body {
 
 .slide-in {
   animation: slide-in 5s ease-in-out forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .slide-in {
+    animation: none;
+  }
 }
