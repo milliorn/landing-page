@@ -9,7 +9,7 @@ export function GenerateInformationCards({
   return (
     <div className="gap-16 mx-4 space-y-2 md:space-y-0 md:grid md:grid-cols-3">
       {cards.map((card) => (
-        <div className="w-full hover:shadow-2xl" key={card.alt}>
+        <div className="w-full hover:shadow-2xl" key={card.id}>
           <InformationImage card={card} />
           <p className="p-2">{card.pText}</p>
         </div>

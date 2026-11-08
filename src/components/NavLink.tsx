@@ -1,5 +1,6 @@
 export interface NavLink {
   href: string;
+  id: string;
   linkText: string;
 }
 

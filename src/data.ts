@@ -1,6 +1,7 @@
 interface InfoCard {
   readonly alt: string;
   readonly height: number;
+  readonly id: string;
   readonly imgSrc: string;
   readonly pText: string;
   readonly width: number;
@@ -45,6 +46,7 @@ const content: Content = {
     {
       alt: "image1",
       height: 980,
+      id: "card-1",
       imgSrc:
         "https://images.unsplash.com/photo-1633356122102-3fe601e05bd2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       pText:
@@ -54,6 +56,7 @@ const content: Content = {
     {
       alt: "image2",
       height: 980,
+      id: "card-2",
       imgSrc:
         "https://images.unsplash.com/photo-1581276879432-15e50529f34b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       pText:
@@ -63,6 +66,7 @@ const content: Content = {
     {
       alt: "image3",
       height: 980,
+      id: "card-3",
       imgSrc:
         "https://images.unsplash.com/photo-1569748130764-3fed0c102c59?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
       pText:

@@ -13,14 +13,17 @@ export function NavbarLinks({
   const navbarLinksData = [
     {
       href: `${import.meta.env.BASE_URL}#${sectionIds.hero}`,
+      id: "nav-hero",
       linkText: linkFirst,
     },
     {
       href: `${import.meta.env.BASE_URL}#${sectionIds.info}`,
+      id: "nav-info",
       linkText: linkMiddle,
     },
     {
       href: `${import.meta.env.BASE_URL}#${sectionIds.contact}`,
+      id: "nav-contact",
       linkText: linkLast,
     },
   ];
