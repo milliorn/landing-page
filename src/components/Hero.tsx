@@ -1,7 +1,11 @@
 import { sectionIds } from "../sectionIds";
 import { HeroImage } from "./HeroImage";
 
-export function Hero(props: { hText: string; pText: string; bText: string }) {
+export function Hero(props: {
+  heading: string;
+  body: string;
+  buttonLabel: string;
+}) {
   return (
     <div
       id={sectionIds.hero}
@@ -9,16 +13,16 @@ export function Hero(props: { hText: string; pText: string; bText: string }) {
     >
       <div className="flex flex-col items-start justify-center w-full px-6 pt-12 pb-24 lg:w-1/2 text-gray-50">
         <h1 className="mx-auto my-4 text-4xl font-bold capitalize md:text-5xl">
-          {props.hText}
+          {props.heading}
         </h1>
         <p className="my-4 leading-normal text-center text-gray-200 sm:mx-auto">
-          {props.pText}
+          {props.body}
         </p>
         <button
           type="button"
           className="px-8 py-4 mx-auto my-4 capitalize bg-gray-50 border border-gray-900 shadow hover:animate-pulse hover:bg-blue-900 text-black hover:text-gray-50 rounded-xl hover:shadow-lg hover:border-transparent"
         >
-          {props.bText}
+          {props.buttonLabel}
         </button>
       </div>
       <div className="w-full text-center lg:w-1/2 lg:py-6">

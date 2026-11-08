@@ -16,9 +16,9 @@ export default function App() {
         logo={content.navLogo}
       />
       <Hero
-        bText={content.heroButtonLabel}
-        hText={content.heroHeading}
-        pText={content.heroBody}
+        body={content.heroBody}
+        buttonLabel={content.heroButtonLabel}
+        heading={content.heroHeading}
       />
       <Information
         cards={content.infoCards}
@@ -26,9 +26,9 @@ export default function App() {
       />
       <Quote author={content.quoteAuthor} quote={content.quote} />
       <Contact
-        button={content.contactButtonLabel}
-        h2={content.contactHeading}
-        p={content.contactBody}
+        body={content.contactBody}
+        buttonLabel={content.contactButtonLabel}
+        heading={content.contactHeading}
       />
       <Footer owner={content.footerOwner} />
     </main>
